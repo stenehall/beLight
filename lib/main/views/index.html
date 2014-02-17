@@ -1,0 +1,33 @@
+<% include head %>
+
+<nav class="clearfix">
+  <ul class="clearfix">
+    <% for(i in devices) { %>
+    <li><a href="#<%= i %>"><%= i %></a></li>
+    <% } %>
+  </ul>
+  <a href="#" id="pull">Menu</a>
+</nav>
+
+<form role="form" class="pure-form">
+  <% for(i in devices) {%>
+  <div id="<%= i %>">
+    <div>
+      <h2><%= i %></h2>
+      <% for(f in devices[i]) { %>
+      <fieldset class="form-group dimmerable">
+        <legend><%= devices[i][f].short_name %></legend>
+        <div class="pure-g-r">
+          <div class="pure-u-1-5">
+            <a data-id="<%= devices[i][f].id %>" data-state="0" class="off pure-button" href="#">Off</a>
+            <a data-id="<%= devices[i][f].id %>" data-state="1" class="on pure-button" href="#">On</a>
+          </div>
+        </div>
+      </fieldset>
+      <% } %>
+    </div>
+  </div>
+  <% } %>
+</form>
+
+<% include footer %>

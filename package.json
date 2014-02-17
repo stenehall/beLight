@@ -1,0 +1,37 @@
+{
+  "name": "Tellstick",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./lib/main/index.js",
+    "test": "NODE_ENV=testing mocha -R spec --recursive lib",
+    },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stenehall/beLight"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "oauth": "*",
+    "ejs": "*",
+    "passport": "*",
+    "passport-facebook": "*",
+    "passport-github": "*",
+    "socket.io": "*",
+    "later": "*",
+    "kaskade": "1.0.x",
+    "winston": "0.7.x"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "supertest": "0.9.x",
+    "nock": "0.27.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
