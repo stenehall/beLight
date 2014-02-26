@@ -1,7 +1,7 @@
 {
   "name": "Tellstick",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Control your tellstick net",
   "main": "index.js",
   "scripts": {
     "start": "node ./lib/main/index.js",
@@ -16,18 +16,18 @@
   "dependencies": {
     "express": "3.x",
     "oauth": "*",
-    "ejs": "*",
-    "passport": "*",
-    "passport-facebook": "*",
-    "passport-github": "*",
-    "socket.io": "*",
-    "later": "*",
+    "ejs": "0.8.x",
+    "passport": "0.2.x",
+    "passport-facebook": "1.0.x",
+    "passport-github": "0.1.x",
+    "socket.io": "0.9.x",
+    "later": "1.1.x",
     "kaskade": "1.0.x",
     "winston": "0.7.x"
   },
   "devDependencies": {
-    "chai": "*",
-    "mocha": "*",
+    "chai": "1.9.x",
+    "mocha": "1.17.x",
     "supertest": "0.9.x",
     "nock": "0.27.x"
   },
