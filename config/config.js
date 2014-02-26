@@ -5,6 +5,7 @@ var kaskade = require("kaskade"),
 var config = require('./default');
 
 // Load envirement based config
+if(env.NODE_ENV === undefined) throw new Error('Need to provide a NODE_ENV');
 kaskade(config, require('./'+env.NODE_ENV));
 
 module.exports = config;
