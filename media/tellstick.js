@@ -62,8 +62,12 @@ $(document).ready(function() {
       }
       if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
         e.preventDefault();
-        location.href = curnode.href;
+        if ( ! curnode.className.match('pure-button'))
+        {
+          location.href = curnode.href;
+        }  
       }
     },false);
   }
 })(document,window.navigator,'standalone');
+
