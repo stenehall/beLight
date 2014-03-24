@@ -250,10 +250,9 @@ nav a#pull {
 
 
   nav {
-    top: 0;
-    left: 0;
     height: auto;
     width: 100%;
+
   }
   nav ul {
     width: 100%;
@@ -291,9 +290,10 @@ nav a#pull {
   }
 
   nav {
-    top: 20px;
+    top: 0;
+    left: 0;
     border-bottom: 0;
-    width: 90%;
+    width: 10%;
     background: #fff;
     color: #000;
   }
